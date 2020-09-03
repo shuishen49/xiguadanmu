@@ -17,4 +17,5 @@ https://github.com/shuishen49/xiguadanmu/releases/
 如果自己编译需要安装
 
   pip install selenium
+  
   pip install pywin32
