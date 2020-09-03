@@ -9,6 +9,12 @@
 
 这个软件暂时只能用于windows系统，
   
-你可以直接下载我编译好的版本
+你可以直接下载我编译好的版本，或者自己下载py，部署好环境用源代码运行也可以
   
 https://github.com/shuishen49/xiguadanmu/releases/
+
+  
+如果自己编译需要安装
+
+  pip install selenium
+  pip install pywin32
