@@ -2,15 +2,13 @@ from selenium import webdriver
 import json
 import time
 import win32com.client
-import key_Controller
-from playsound import playsound
-import tts_demo
-import traceback
+# import win32com
+# import key_Controller
+# from playsound import playsound
+# import traceback
 
 old_list=[]
-langdu=tts_demo
-langdu.text=''
-yidu=False
+
 __danmu_num=1
 
 def speak_text(text):
@@ -48,17 +46,25 @@ def langdu_danmu(danmu):
     #for循环提取html字典中嵌套的子字典data中嵌套的子字典room的内容赋值给text变量
     #这个html字典来自于get_danmu方法传递
     danmu=danmu.split(":",1)
+    # print(len(str1))
+    # yidu = False
     if len(danmu) > 1 :
         danmu_name=danmu[0][-6:]
+        # danmu_name=danmu_name[-6:]
         danmu_content=danmu[1]
+        # print(danmu_content)
         danmu_string=danmu_name + "说:" + danmu_content
         print(danmu_string)
         speak_text(danmu_string)
+
+
     else :
+
+
         danmu_string="欢迎"+danmu[0]
         print(danmu_string)
         speak_text(danmu_string)
-        
+
 while True:
     a=driver.find_elements_by_class_name("chatroom__msg")
     try:
@@ -66,11 +72,4 @@ while True:
         __danmu_num +=1
     except Exception as e:
         time.sleep(3)
-        try:
-            if yidu==False and len(langdu.text)>1:
-                langdu.huawei_yuyin.tts_example(langdu,langdu.text)
-                langdu.text=''
-                yidu=False
-        except :
-                langdu.text=''
-        # traceback.print_exc()
+
