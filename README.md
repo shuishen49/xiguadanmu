@@ -20,6 +20,10 @@ https://github.com/shuishen49/xiguadanmu/releases/
   
   pip install pywin32
 
+新版部分代码由https://github.com/q792602257/XiguaLiveDanmakuHelper
+免费提供谢谢这位大大。
+我这个软件也是免费的
+
 如图所示
 
 ![image](https://github.com/shuishen49/xiguadanmu/blob/master/QQ%E5%9B%BE%E7%89%8720201209131420.png)
