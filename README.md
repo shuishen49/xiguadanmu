@@ -19,3 +19,9 @@ https://github.com/shuishen49/xiguadanmu/releases/
   pip install selenium
   
   pip install pywin32
+
+如图所示
+
+![image](https://github.com/shuishen49/xiguadanmu/blob/master/QQ%E5%9B%BE%E7%89%8720201209131420.png)
+
+![image](https://github.com/shuishen49/xiguadanmu/blob/master/QQ%E5%9B%BE%E7%89%8720201209131441.png)
